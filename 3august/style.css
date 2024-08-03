@@ -1,0 +1,29 @@
+h1 {
+    color: black;
+    font-size: 44px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    background-color: aquamarine;
+}
+.para {
+    background-color: #f2f2f2;
+    color: black;
+    font-size: 44px;
+    text-align: justify;
+    border: 3px dashed orange ;
+    border-radius: 20px;
+}
+.para2 {
+    background-color: #f2f2f2;
+    color: rgb(202, 119, 19);
+    border-right: 5px solid brown;
+    border-bottom: 5px solid black;
+    border-bottom-right-radius: 20px;
+    font-size: 44px;
+}
