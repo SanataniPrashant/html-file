@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#navbar div img {
+    width: 8%;
+    border-radius: 50%;
+}
