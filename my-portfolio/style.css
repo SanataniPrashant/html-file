@@ -3,7 +3,53 @@
     padding: 0px;
     box-sizing: border-box;
 }
-#navbar div img {
-    width: 8%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 80px;
+    /* background-color: rgb(19, 11, 27); */
+    align-items: center;
+}
+.hero {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1698600926897-0167788bc194?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI4fHxiYWNrZ3JvdW5kJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+.hero .navbar .image img { 
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
     border-radius: 50%;
+    margin-left: 8px;
+}
+.hero .navbar nav ul {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+    gap: 25px;
+    margin-right: 20px;
+}
+.hero .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.hero .navbar nav ul li a:hover {
+    background-color: rgb(3, 3, 3);
+    color: rgb(249, 213, 84);
+    border-bottom: 5px solid rgba(233, 63, 125, 0.729);
+}
+.hero .navbar .logo a {
+    color: white;
+    gap: 1px;
+}
+.hero .navbar .logo a:hover {
+    background-color: rgb(3, 3, 3);
+    color: rgb(249, 213, 84);
+    border-bottom: 5px solid rgba(233, 63, 125, 0.729);
 }
