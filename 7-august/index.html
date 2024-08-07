@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            height: 80px;
+            background-color: blueviolet;
+            align-items: center;
+        }
+        .hero {
+            height: 100vh;
+            background-image: url(./P-logo.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            
+        }
+        .hero .navbar h1{
+            color: white;
+            margin-left: 5px;
+        }
+        .hero .navbar nav ul {
+            display: flex;
+            flex-direction: row;
+
+            list-style: none;
+            gap: 20px;
+            margin-right: 20px;
+        }
+        .hero .navbar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .hero .navbar nav ul li a:hover {
+            background-color: white;
+            color: blue;
+            border-bottom: 5px solid red;
+        }
+        span {
+            color: rgb(194, 207, 194);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="navbar">
+            <h1>LOGO <span>scarpper</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequatur natus quasi dolorum ipsa labore delectus nihil. Veniam, voluptatibus impedit, eius assumenda ad voluptates adipisci sunt soluta, temporibus totam laudantium.</p>
+        </div>
+    </header>
+</body>
+</html>
