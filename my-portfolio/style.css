@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    overflow-x: hidden;
     
 }
 .hero .navbar .image img { 
@@ -29,7 +30,6 @@
 .hero .navbar nav ul {
     display: flex;
     flex-direction: row;
-
     list-style: none;
     gap: 25px;
     margin-right: 20px;
@@ -53,4 +53,30 @@
     background-color: rgb(3, 3, 3);
     color: rgb(249, 213, 84);
     border-bottom: 5px solid rgba(233, 63, 125, 0.729);
+}
+.hero .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.hero .content h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: white;
+}
+.hero .content span {
+    color: burlywood;
+}
+.hero .content .photo {
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.hero .content .photo img{
+    width: 500px;
+    height: 500px;
+    border-image: round;
+    border-radius: 50%;
 }
