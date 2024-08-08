@@ -45,8 +45,9 @@
     border-bottom: 5px solid rgba(233, 63, 125, 0.729);
 }
 .hero .navbar .logo a {
+    text-decoration: none;
     color: white;
-    gap: 1px;
+    margin-right: 20px;
 }
 .hero .navbar .logo a:hover {
     background-color: rgb(3, 3, 3);
