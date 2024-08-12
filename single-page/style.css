@@ -246,4 +246,60 @@
     font-size: 40px;
     margin-top: 25px;
 }
+.service .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.service .heading div h1 {
+    font-size: 34px;
+    color: #2c4964;
+    margin-top: 40px;
+}
+.service .heading .line {
+    height: 1px;
+    width: 140px;
+    border: 1px solid gainsboro;
+    margin: 20px 0px 30px 0px;
+}
+.service .heading .line div {
+    height: 1px;
+    width: 60px;
+    border: 2px solid #1977cc ;
+    margin-left: 40px;
+}
+.service .heading div p{
+    font-size: 24px;
+    color: #2c4964;
+}
+.service .cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 1000px;
+    margin: 10px;
+}
+.service .cards .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+    color: #2c4964;
+}
+.service .cards .item h3{
+    font-size: 34px;
+    margin: 70px 0px;
+}
+.service .cards .item p{
+    font-size: 24px;
+}
+.service .cards .item:hover{
+    background-color: #1977cc;
+    color: white;
+}
+
 
