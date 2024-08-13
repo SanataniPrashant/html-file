@@ -49,13 +49,18 @@
     border: none;
     padding: 8px 20px;
     margin-right: 120px;
-
+}
+.hero .navbar .btn:hover{
+    background-color: white;
 }
 .hero .navbar .btn a{
-    color: white;
     text-decoration: none;
     text-align: center;
     font-size: 14px;
+    color: white;
+}
+.hero .navbar .btn a:hover{
+    color: #2c4964;
 }
 .content .welcome h1{
     font-size: 48px;
@@ -301,5 +306,77 @@
     background-color: #1977cc;
     color: white;
 }
+.appoinment .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.appoinment .heading div h1 {
+    font-size: 34px;
+    color: #2c4964;
+    margin-top: 40px;
+}
+.appoinment .heading .line {
+    height: 1px;
+    width: 180px;
+    border: 1px solid gainsboro;
+    margin: 20px 0px 30px 0px;
+}
+.appoinment .heading .line div {
+    height: 1px;
+    width: 60px;
+    border: 2px solid #1977cc ;
+    margin-left: 60px;
+}
+.appoinment .heading div p{
+    font-size: 24px;
+    color: #2c4964;
+}
+.appoinment .details{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 230px;
+    margin: 40px 40px 0px 40px;
+}
+.appoinment .details div input,
+.appoinment .details div select{
+   height: 50px;
+   width: 400px;
+   font-size: 18px;
+   padding: 10px;
+}
+.appoinment .detailss{
+    margin: 0px 0px 20px 40px;
+
+}
+.appoinment .detailss div input{
+    height: 50px;
+    width: 1360px;
+    font-size: 18px;
+    padding: 10px;
+}
+.appoinment .detailss .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.appoinment .detailss .button .btn{
+    background-color: #1977cc;
+    color: white;
+    height: 50px;
+    width: 300px;
+    font-size: 24px;
+    border-radius: 50px;
+    border: none;
+}
+.appoinment .detailss .button .btn:hover{
+    background-color: white;
+    color: #2c4964;
+}
+
+
 
 
