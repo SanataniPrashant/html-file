@@ -376,7 +376,136 @@
     background-color: white;
     color: #2c4964;
 }
-
-
-
-
+.department .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.department .heading div h1 {
+    font-size: 34px;
+    color: #2c4964;
+    margin-top: 40px;
+}
+.department .heading .line {
+    height: 1px;
+    width: 180px;
+    border: 1px solid gainsboro;
+    margin: 20px 0px 30px 0px;
+}
+.department .heading .line div {
+    height: 1px;
+    width: 60px;
+    border: 2px solid #1977cc ;
+    margin-left: 60px;
+}
+.department .heading div p{
+    font-size: 24px;
+    color: #2c4964;
+}
+.department .dep_name{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 2100px;
+    margin: 10px;
+    gap: 30px;
+}
+.department .dep_name .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+    color: #2c4964;
+}
+.department .dep_name .item h3{
+    font-size: 34px;
+    margin: 40px 0px;
+}
+.department .dep_name .item p{
+    font-size: 24px;
+    margin: 40px;
+}
+.doctor .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.doctor .heading div h1 {
+    font-size: 34px;
+    color: #2c4964;
+    margin-top: 40px;
+}
+.doctor .heading .line {
+    height: 1px;
+    width: 180px;
+    border: 1px solid gainsboro;
+    margin: 20px 0px 30px 0px;
+}
+.doctor .heading .line div {
+    height: 1px;
+    width: 60px;
+    border: 2px solid #1977cc ;
+    margin-left: 60px;
+}
+.doctor .heading div p{
+    font-size: 24px;
+    color: #2c4964;
+}
+.doctor .doct{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 600px;
+    margin: 10px;
+    gap: 30px;
+    overflow: hidden;
+}
+.doctor .doct .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #2c4964;
+    margin-left: 10px;
+}
+.doctor .doct .row .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:start;
+}
+.doctor .doct .row .column h3{
+    color: #2c4964;
+    font-size: 34px;
+}
+.doctor .doct .row .column h5{
+    color: #2c4964;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+.doctor .doct .row .column p{
+    color: #2c4964;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.doctor .doct .row .column .logo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.doctor .doct .row .column .logo i{
+    color:#2c4964
+}
+.doctor .doct .row div img{
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+}
