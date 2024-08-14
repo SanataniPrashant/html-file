@@ -509,3 +509,47 @@
     border-radius: 50%;
     margin-left: 10px;
 }
+.gallery .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.gallery .heading div h1 {
+    font-size: 34px;
+    color: #2c4964;
+    margin-top: 40px;
+}
+.gallery .heading .line {
+    height: 1px;
+    width: 180px;
+    border: 1px solid gainsboro;
+    margin: 20px 0px 30px 0px;
+}
+.gallery .heading .line div {
+    height: 1px;
+    width: 60px;
+    border: 2px solid #1977cc ;
+    margin-left: 60px;
+}
+.gallery .heading div p{
+    font-size: 24px;
+    color: #2c4964;
+}
+.gallery .photos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.gallery .photos .div img{
+    height: 370px;
+    width: 350px;
+    border-radius: 50px;
+}
+.gallery .photos .div img:hover{
+    scale: 1.1;
+    transition: 2s;
+}
