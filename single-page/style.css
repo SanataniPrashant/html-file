@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 .hero {
     height: 120vh;
@@ -61,6 +62,17 @@
 }
 .hero .navbar .btn a:hover{
     color: #2c4964;
+}
+@media(max-width:1024px){
+    .hero .navbar h1 {
+        margin-left: 30px;
+    }
+    .hero .navbar .btn{
+        margin-right: 60px;
+    }
+}
+.content{
+    overflow-x: hidden;
 }
 .content .welcome h1{
     font-size: 48px;
@@ -145,6 +157,22 @@
 .content .submain div p{
     font-size: 18px;
 }
+@media(max-width:1024px){
+    .content .main .first {
+        height: 500px;
+        width: 300px;
+    }
+    .content .submain{
+        gap: 10px;
+    }
+    .content .submain div{
+        height: 400px;
+        width: 220px;
+    }
+}
+.about{
+    overflow-x: hidden;
+}
 .about .parent{
     display: flex;
     flex-direction: row;
@@ -200,6 +228,12 @@
 .about .parent .child2 .div4 div i{
     color:#1977cc;
 }
+@media(max-width:1024px){
+    .about .parent{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .meter{
     height: 400px;
     display: flex;
@@ -208,6 +242,7 @@
     gap: 20px;
     align-items: center;
     background-color: rgb(238, 242, 246);
+    overflow-x: hidden;
 }
 .meter .div1,
 .meter .div2,
@@ -250,6 +285,37 @@
     color: #2c4964;
     font-size: 40px;
     margin-top: 25px;
+}
+@media(max-width:1024px){
+    .meter{
+        gap: 5px;
+    }
+    .meter .div1,
+    .meter .div2,
+    .meter .div3,
+    .meter .div4{
+        width: 300px;
+        padding: 0px 30px 30px 30px;
+        background-color: white;
+    }
+    .meter .div1 h1,
+    .meter .div2 h1,
+    .meter .div3 h1,
+    .meter .div4 h1{
+        font-size: 44px;
+        margin-top: 24px;
+    }
+    .meter .div1 h5,
+    .meter .div2 h5,
+    .meter .div3 h5,
+    .meter .div4 h5{
+        font-size: 30px;
+        margin-top: 25px;
+    }
+}
+
+.service{
+    overflow-x: hidden;
 }
 .service .heading {
     display: flex;
@@ -305,6 +371,9 @@
 .service .cards .item:hover{
     background-color: #1977cc;
     color: white;
+}
+.appoinment{
+    overflow-x: hidden;
 }
 .appoinment .heading {
     display: flex;
@@ -376,6 +445,9 @@
     background-color: white;
     color: #2c4964;
 }
+.department{
+    overflow-x: hidden;
+}
 .department .heading {
     display: flex;
     flex-direction: column;
@@ -428,6 +500,9 @@
 .department .dep_name .item p{
     font-size: 24px;
     margin: 40px;
+}
+.doctor{
+    overflow-x: hidden;
 }
 .doctor .heading {
     display: flex;
@@ -509,6 +584,9 @@
     border-radius: 50%;
     margin-left: 10px;
 }
+.gallery{
+    overflow-x: hidden;
+}
 .gallery .heading {
     display: flex;
     flex-direction: column;
@@ -553,6 +631,9 @@
     scale: 1.1;
     transition: 2s;
 }
+.contact{
+    overflow-x: hidden;
+}
 .contact .heading {
     display: flex;
     flex-direction: column;
@@ -592,6 +673,7 @@ iframe{
     justify-content: space-evenly;
     align-items: center;
     height: 400px;
+    overflow-x: hidden;
 }
 .footer .medilab{
     display: flex;
@@ -636,6 +718,7 @@ iframe{
 }
 .copy{
     height: 50px;
+    overflow-x: hidden;
 }
 .copy p{
     display: flex;
