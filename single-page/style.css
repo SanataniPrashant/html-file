@@ -71,6 +71,23 @@
         margin-right: 60px;
     }
 }
+@media(max-width:768px){
+    .hero{
+        height: 160vh;
+    }
+    .hero .navbar{
+        justify-content: space-evenly;
+    }
+    .hero .navbar h1{
+        margin-left: 5px;
+    }
+    .hero .navbar nav ul {
+        gap: 10px;
+    }
+    .hero .navbar .btn{
+        margin-right: 10px;
+    }
+}
 .content{
     overflow-x: hidden;
 }
@@ -168,6 +185,27 @@
     .content .submain div{
         height: 400px;
         width: 220px;
+    }
+}
+@media(max-width:768px){
+    .content .welcome {
+        margin: 20px 0px;
+    }
+    .content .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .main .first {
+        height: 400px;
+        width: 400px;
+        margin: 5px 0px 20px 0px;
+    }
+    .content .submain{
+        gap: 20px;
+    }
+    .content .submain div{
+        height: 400px;
+        width: 250px;
     }
 }
 .about{
@@ -313,7 +351,13 @@
         margin-top: 25px;
     }
 }
-
+@media(max-width:768px){
+    .meter{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 600px;
+    }
+}
 .service{
     overflow-x: hidden;
 }
@@ -371,6 +415,11 @@
 .service .cards .item:hover{
     background-color: #1977cc;
     color: white;
+}
+@media(max-width:768px){
+    .service{
+        height: 1400px;
+    }
 }
 .appoinment{
     overflow-x: hidden;
@@ -445,8 +494,35 @@
     background-color: white;
     color: #2c4964;
 }
+@media(max-width:1024px){
+    .appoinment .details{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    .appoinment .detailss div input{
+        width: 900px;
+        margin-left: 30px;
+    }
+}
+@media(max-width:768px){
+    .appoinment .details div input,
+    .appoinment .details div select{
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+        padding: 10px;
+}
+    .appoinment .details{
+        justify-content: space-evenly;
+    }
+    .appoinment .detailss div input{
+        width: 700px;
+        margin-left: 5px;
+    }
+}
 .department{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .department .heading {
     display: flex;
@@ -500,6 +576,12 @@
 .department .dep_name .item p{
     font-size: 24px;
     margin: 40px;
+}
+@media(max-width:1024px){
+    .department .dep_name{
+        grid-template-columns: auto;
+        height: 4200px;
+    }
 }
 .doctor{
     overflow-x: hidden;
@@ -584,6 +666,13 @@
     border-radius: 50%;
     margin-left: 10px;
 }
+@media(max-width:768px){
+    .doctor .doct{
+        display: grid;
+        grid-template-columns: auto;
+        height: 1000px;
+    }
+}
 .gallery{
     overflow-x: hidden;
 }
@@ -631,6 +720,12 @@
     scale: 1.1;
     transition: 2s;
 }
+@media(max-width:1024px){
+    .gallery .photos{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+}
 .contact{
     overflow-x: hidden;
 }
@@ -666,6 +761,11 @@
 iframe{
     margin-left: 10px;
 
+}
+@media(max-width:1024px){
+    iframe{
+        width: 98%;
+    }
 }
 .footer{
     display: flex;
@@ -715,6 +815,11 @@ iframe{
     color: #2c4964;
     padding: 10px;
     font-size: 20px;
+}
+@media(max-width:1024px){
+    .footer{
+        height: 450px;
+    }
 }
 .copy{
     height: 50px;
