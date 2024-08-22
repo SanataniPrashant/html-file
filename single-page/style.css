@@ -3,8 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    overflow-x: hidden;
+}
 .hero {
-    height: 120vh;
+    height: 115vh;
     background-image: url("https://cdn.pixabay.com/photo/2014/12/10/21/01/doctor-563428_640.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -62,7 +65,15 @@
 .hero .navbar .btn a:hover{
     color: #2c4964;
 }
+#bars{
+    font-size: 40px;
+    display: none;
+    padding: 10px;
+}
 @media(max-width:1024px){
+    .hero{
+        height: 110vh;
+    }
     .hero .navbar h1 {
         margin-left: 30px;
     }
@@ -87,31 +98,28 @@
         margin-right: 10px;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .hero{
         height: 310vh;
     }
-    .hero .navbar{
-        height: 40px;
-        justify-content: space-between;
+    .hero .navbar nav ul{
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: lightblue;
+        width: 100%;
+        text-align: center;
+        z-index: 55;
+        display: none;
     }
-    .hero .navbar h1{
-        font-size: 12px;
+    #bars{
+        display: block;
+        color: black;
     }
-    .hero .navbar nav ul {
-        gap: 5px;
+    #input1:checked~ .hero .navbar nav ul{
+        display: block;
     }
-    .hero .navbar nav ul a{
-        font-size: 12px;
-    }
-    .hero .navbar .btn{
-        padding: 2px 5px;
-        margin-right:5px;
-    }
-    .hero .navbar .btn a{
-        font-size: 8px;
-    }
-
 }
 .content{
     overflow-x: hidden;
@@ -233,7 +241,7 @@
         width: 250px;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .content .welcome{
         margin: 20px 10px;
     }
@@ -396,7 +404,7 @@
         height: 600px;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .meter{
         display: grid;
         grid-template-columns: auto;
@@ -466,7 +474,7 @@
         height: 1400px;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .service{
         height: 2700px;
     }
@@ -579,7 +587,7 @@
         margin-left: 5px;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .appoinment{
         height: 920px;
     }
@@ -665,7 +673,7 @@
         height: 4500px;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .department .dep_name{
         height: 3500px;
     }
@@ -771,7 +779,7 @@
         height: 1000px;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .doctor .doct{
         height: 1300px;
     }
@@ -829,7 +837,7 @@
         justify-content: space-around;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .gallery .photos{
         grid-template-columns: auto;
         justify-content: space-around;
@@ -876,7 +884,7 @@ iframe{
         width: 98%;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     iframe{
         width: 95%;
     }
@@ -935,7 +943,7 @@ iframe{
         height: 450px;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .footer{
         flex-direction: column;
         align-items: center;
