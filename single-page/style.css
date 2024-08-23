@@ -15,7 +15,11 @@ html{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+.hero .navbar{
+    position: fixed;
+}
 .hero .navbar {
+    width: 100%;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -100,22 +104,23 @@ html{
 }
 @media(max-width:426px){
     .hero{
-        height: 310vh;
-    }
-    .hero .navbar nav ul{
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background-color: lightblue;
-        width: 100%;
-        text-align: center;
-        z-index: 55;
-        display: none;
+        height: 320vh;
     }
     #bars{
         display: block;
         color: black;
+    }
+    .hero .navbar nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        background-color:rgb(173, 238, 238);
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        display: none;
     }
     #input1:checked~ .hero .navbar nav ul{
         display: block;
@@ -222,7 +227,7 @@ html{
 }
 @media(max-width:768px){
     .content .welcome {
-        margin: 20px 0px;
+        margin: 90px 0px 0px 0px;
     }
     .content .main {
         flex-direction: column;
@@ -231,19 +236,19 @@ html{
     .content .main .first {
         height: 400px;
         width: 400px;
-        margin: 5px 0px 20px 0px;
+        margin: 0px 0px 20px 0px;
     }
     .content .submain{
         gap: 20px;
     }
     .content .submain div{
-        height: 400px;
+        height: 380px;
         width: 250px;
     }
 }
 @media(max-width:426px){
     .content .welcome{
-        margin: 20px 10px;
+        margin: 120px 10px 10px 10px;
     }
     .content .main {
         flex-direction: column;
