@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            margin: 100px;
+            /* animation-name: ram;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 3; */
+            animation: ram 2s ease-in-out 1;
+            animation-delay: 2s;
+            /* animation-fill-mode: forwards;
+            animation-fill-mode: backwards; */
+            animation-fill-mode: both;
+            
+        }
+        @keyframes ram {
+            from{
+                width: 100px;
+                background-color: rgb(227, 232, 59);
+            }
+            to{
+                background-color: aqua;
+                width: 1200px;
+            }
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(11, 1, 1);
+            margin: 100px;
+            animation: rama 2s ease-in-out infinite;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+            position: relative;
+        }
+        @keyframes rama{
+            0%{
+                background-color: cadetblue;
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                background-color: rgb(230, 124, 67);
+                top: 0px;
+                left: 100px;
+            }
+            50%{
+                background-color: rgb(171, 73, 20);
+                top: 100px;
+                left: 100px;
+            }
+            75%{
+                background-color: rgb(107, 33, 226);
+                top: 100px;
+                left: 0px;
+            }
+            100%{
+                background-color: rgb(107, 33, 226);
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

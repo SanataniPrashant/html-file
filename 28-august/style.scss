@@ -1,0 +1,40 @@
+// Variable
+// Nesting
+// Mixins
+@mixin commoncode(){
+    color: rgb(7, 7, 7);
+    font-size: 60px;
+    letter-spacing: 1.2rem;
+}
+@mixin commoncodee($p1,$p2,$p3){
+    color: $p1;
+    font-size: $p2;
+    letter-spacing: $p3;
+}
+$primary_Color: rgb(112, 226, 92);
+$secondary_Color: rgb(255, 255, 255);
+$small_Font_Size: 20px;
+
+body{
+    background-color: $primary_Color;
+}
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     h1{
+        @include commoncodee(blue,46px,1.3rem);
+        &:hover{
+            color: red;
+        }
+     }
+     p{
+        @include commoncode();
+        &:hover{
+            color: red;
+        }
+     }
+}

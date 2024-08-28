@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(112, 226, 92);
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header h1 {
+  color: blue;
+  font-size: 46px;
+  letter-spacing: 1.3rem;
+}
+.header h1:hover {
+  color: red;
+}
+.header p {
+  color: rgb(7, 7, 7);
+  font-size: 60px;
+  letter-spacing: 1.2rem;
+}
+.header p:hover {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
