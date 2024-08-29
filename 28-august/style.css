@@ -25,4 +25,39 @@ body {
 }
 .header p:hover {
   color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+.container .box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+.buttons .btn1, .buttons .btn2 {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  width: 140px;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.buttons .btn2 {
+  background-color: beige;
 }/*# sourceMappingURL=style.css.map */

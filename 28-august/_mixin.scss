@@ -1,0 +1,17 @@
+@mixin commoncode(){
+    color: rgb(7, 7, 7);
+    font-size: 60px;
+    letter-spacing: 1.2rem;
+}
+@mixin commoncodee($p1,$p2,$p3){
+    color: $p1;
+    font-size: $p2;
+    letter-spacing: $p3;
+}
+@mixin flexprop($x){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: $x;
+}

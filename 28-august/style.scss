@@ -1,19 +1,8 @@
 // Variable
 // Nesting
 // Mixins
-@mixin commoncode(){
-    color: rgb(7, 7, 7);
-    font-size: 60px;
-    letter-spacing: 1.2rem;
-}
-@mixin commoncodee($p1,$p2,$p3){
-    color: $p1;
-    font-size: $p2;
-    letter-spacing: $p3;
-}
-$primary_Color: rgb(112, 226, 92);
-$secondary_Color: rgb(255, 255, 255);
-$small_Font_Size: 20px;
+@import "mixin.scss";
+@import "variables.scss";
 
 body{
     background-color: $primary_Color;
@@ -36,5 +25,31 @@ body{
         &:hover{
             color: red;
         }
+     }
+}
+.container{
+    @include flexprop (row);
+     .box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+     }
+}
+.buttons{
+    @include flexprop(row);
+     .btn1{
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+        width: 140px;
+        font-size: 24px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+     }
+     .btn2{
+        @extend .btn1;
+        background-color: beige;
      }
 }
