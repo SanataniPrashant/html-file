@@ -6,21 +6,21 @@
     box-sizing: border-box;
 }
 html{
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
 .navbar{
    @include flex(row,space-evenly);
    background-color: rgb(238, 229, 229);
    width: 100%;
-   height: 100px;
+   height: 80px;
    position: fixed;
    z-index: 100;
     h1{
-      color: $primary_Color;
-      font-size: 44px;
+      color: $secondary_Color;
+      font-size: 35px;
     }
     h1:hover{
-      @include hover($secondary_Color,1.2,2s);
+      @include hover($primary_Color,1.2,2s);
     }
     ul{
       @include flex(row,space-between);
@@ -30,16 +30,16 @@ html{
     .search {
       width: 300px;
       height: 40px;
-      border: 2px solid $primary_Color;
+      border: 2px solid $secondary_Color;
       border-radius: 30px;
       text-align:end;
       padding: 3px 6px 3px 0px;
     }
      li a{
-      color: $primary_Color;
+      color: $secondary_Color;
      }
      li a:hover{
-      @include hover($secondary_Color,1.2,2s);
+      @include hover($primary_Color,1.2,2s);
      }
     label{
       display: none;
@@ -47,83 +47,52 @@ html{
 }
 #landing{
   @include flex(column,space-evenly);
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  background-image: url("https://cdn.pixabay.com/photo/2021/11/16/15/35/technology-6801334_640.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  .title{
-    @include flex(column,center);
-    h1{
-      font-size: 44px;
-      padding: 30px;
-    }
-    h2{
-      font-size: 34px;
-      padding: 30px;
+  .ftitle{
+    @include flex(row,space-between);
+    gap: 50px;
+    padding-top: 20px;
+    .title{
+      @include flex(column,center);
+      color: $secondary_Color;
+      h1{
+        font-size: 35px;
+        padding-bottom: 20px;
+      }
+      h2{
+        font-size: 35px;
+      }
     }
   }
-  .roll{
-    position: relative;
-    top: 140px;
-    background-color: black;
-    width: 100%;
-    height: 80px;
-    marquee{
-      background-color: black;
-      color: aliceblue;
-      font-size: 50px;
-      font-family: cursive;
+  .btitle{
+    @include flex(row,space-between);
+    gap: 10px;
+    .subtitle{
+      @include flex(column,center);
+      img{
+        width: 99%;
+        height: 100%;
       }
+    }
   }
 }
-#products{
+#blog{
+  @include flex(column,space-between);
+  h1{
+    font-size: 50px;
+    padding-bottom: 20px
+  }
+  .pblog{
+    @include flex(row,center);
+  }
+}
+#images{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 10px;
-  gap: 30px;
-  div{
-    @include flex(column,space-evenly);
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    gap: 20px;
-    background-color: white;
-    border: 2px solid $primary_Color;
-    border-radius: 35px;
-    text-decoration: none;
-    img{
-      width: 100%;
-      height:90%;
-      object-fit: cover;
-      border-radius: 20px;
-    }
-    h1{
-      font-size: 30px;
-      text-decoration: none;
-      color: $primary_Color;
-    }
-    button{
-      width: 100px;
-      height: 20px;
-      margin-bottom: 5px;
-      border: 2px solid $primary_Color;
-      border-radius: 10px;
-      a{
-        text-decoration: none;
-        color: $primary_Color;
-      }
-    button:hover{
-      background-color: $primary_Color;
-      a{
-        color: white;
-      }
-    }
-    }
-  }
+  padding-left: 80px;
+  padding-top: 50px;
 }
-
 #footer{
   @include flex(row,space-between);
   color: $primary_Color;
