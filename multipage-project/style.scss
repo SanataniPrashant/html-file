@@ -100,7 +100,27 @@ html{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
-    display: inline-block;
+    @include flex(column,space-between);
+    .card-img img{
+      width: 100%;
+      height: 200px;
+    }
+    .card-content{
+      font-size: 20px;
+    }
+    .about-product{
+      @include flex(row,space-evenly);
+      gap: 50px;
+      padding-bottom: 10px;
+    }
+    .card-button{
+      width: 80px;
+      height: 30px;
+    }
+    .card-button:hover{
+      background-color: rgb(238, 229, 229) ;
+      color: $primary_Color;
+    }
   }
 }
 #images{
