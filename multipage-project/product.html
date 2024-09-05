@@ -29,7 +29,7 @@
         }
         .navbar h1 {
         color: #2c4964;
-        font-size: 44px;
+        font-size: 35px;
         }
         .navbar h1:hover {
         color: black;
@@ -64,6 +64,62 @@
         }
         .navbar label {
         display: none;
+        }
+        #audio{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 120px;
+        }
+        #audio .audio{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 30px;
+        }
+        #card {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        #card .card {
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+        #card .card .card-img img {
+            width: 100%;
+            height: 200px;
+        }
+        #card .card .card-content {
+        font-size: 10px;
+        }
+        #card .card .about-product {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            gap: 50px;
+            padding-bottom: 10px;
+        }
+        #card .card .card-button {
+            width: 80px;
+            height: 30px;
+        }
+        #card .card .card-button:hover {
+            background-color: rgb(238, 229, 229);
+            color: #2c4964;
         }
         #footer {
         display: flex;
@@ -125,7 +181,6 @@
         flex-direction: column;
         gap: 20px;
         }
-
         .foot {
         display: flex;
         justify-content: space-between;
@@ -151,11 +206,11 @@
     <div class="navbar">
         <h1>DIGITAL-STORE</h1>
         <ul>
-            <li><a href="./index.html"><i class="fa-solid fa-house fa-3x"></i></a></li>
+            <li><a href="./index.html"><i class="fa-solid fa-house fa-2x"></i></a></li>
             <li class="search"><a href="./product.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
-            <li><a href="./product.html"><i class="fa-solid fa-blog fa-3x"></i></a></li>
-            <li><a href="./log-in.html"><i class="fa-solid fa-user fa-3x"></i></a></li>
-            <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-3x"></i></a></li>
+            <li><a href="./product.html"><i class="fa-solid fa-blog fa-2x"></i></a></li>
+            <li><a href="./log-in.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
+            <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping fa-2x"></i></a></li>
         </ul>
         <input type="checkbox" hidden id="input1"/>  
         <label for="input1"><i id="bars" class="fa fa-bars fa-3x"></i></label>
@@ -197,10 +252,340 @@
                 <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/Blaupunkt._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/Blaupunkt._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
             </div>
         </div>
+        <div id="card">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41evpA8RwlL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Boult Audio W20 Truly Wireless in Ear Earbuds with 35H Playtime, Zen™ ENC Mic, 45ms Low Latency, 13mm Bass</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹1,099</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="mobile">
+    <section id="audio">
+        <h1>Explore Top Mobile-phone Brands</h1>
         <div class="audio">
-            <h1>Explore Top Tablet Brands</h1>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+        </div>
+        <div id="card">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999e</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">Learn More</button></a>
+                    <a href="./cart.html"><button class="card-button">₹69,999</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Apple iPhone 15 (128 GB) - Black</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹69,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="audio">
+        <h1>Explore Top Washing-Machine Brands</h1>
+        <div class="audio">
             <div class="oneplus">
                 <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
             </div>
@@ -213,11 +598,6 @@
             <div class="realme">
                 <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
             </div>
-        </div>
-    </section>
-    <section class="laptop">
-        <div class="audio">
-            <h1>Explore Top Tablet Brands</h1>
             <div class="oneplus">
                 <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
             </div>
@@ -230,9 +610,164 @@
             <div class="realme">
                 <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
             </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+        </div>
+        <div id="card">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/61rD2AEWUrL._SX679_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Haier 6 Kg 5 star Fully Automatic Top Loading Washing Machine HWM60-AE, Titanium Grey, 2024</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹12,490</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="audio">
+    <section id="audio">
         <h1>Explore Top Refrigerator Brands</h1>
         <div class="audio">
             <div class="sony">
@@ -241,16 +776,362 @@
             <div class="samsung">
                 <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
             </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+        </div>
+        <div id="card">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/31rtK+cTmIL._SY445_SX342_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 236 L, 2 Star, Digital Inverter, Frost Free Double Door Refrigerator</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹23,690</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="audio">
-        <h1>Explore Top Washing - Machine Brands</h1>
+    <section id="audio">
+        <h1>Explore Trimmers Brands</h1>
         <div class="audio">
             <div class="sony">
                 <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
             </div>
             <div class="samsung">
                 <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+        </div>
+        <div id="card">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/21ij01bkqHL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>MI Xiaomi Beard Trimmer for Men 2C With High Precision Trimming | 2 Beard Comb | USB Type-C | Fast Charging |</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button"> ₹1,199</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
             </div>
         </div>
     </section>
@@ -269,6 +1150,173 @@
             <div class="realme">
                 <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
             </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+        </div>
+        <div id="card">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41qUf9xFHKL._SX300_SY300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Redmi Pad Pro 5G |Snapdragon 7s Gen 2|30.7cm(12.1") Tablet|33+ Days Standby| 10000mAh|HyperOS|8GB, 128GB</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹24,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="audio">
@@ -285,6 +1333,178 @@
             </div>
             <div class="realme">
                 <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+        </div>
+        <div id="card">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41JRghZFleL._SY300_SX300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UQ7550PSF (Ceramic Black)</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹49,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/81nikv9C6lL._AC_UY327_FMwebp_QL65_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹49,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/81nikv9C6lL._AC_UY327_FMwebp_QL65_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹49,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/71CmKZXntgL._AC_UY327_FMwebp_QL65_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)
+                        Visit the LG Store</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹49,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41JRghZFleL._SY300_SX300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UQ7550PSF (Ceramic Black)</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹49,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/71DGhNHPyeL._SX522_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Acer 139 cm (55 inches) Advanced I Series 4K Ultra HD Smart LED Google TV AR55GR2851UDFL</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹49,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/41JRghZFleL._SY300_SX300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UQ7550PSF (Ceramic Black)</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹49,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/81nikv9C6lL._AC_UY327_FMwebp_QL65_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Samsung 138 cm (55 inches) D Series Crystal 4K Vivid Ultra HD Smart LED TV UA55DUE70BKLXL (Black)</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹48,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/71DGhNHPyeL._SX522_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Acer 139 cm (55 inches) Advanced I Series 4K Ultra HD Smart LED Google TV AR55GR2851UDFL (Black)</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹30,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/51eiFYQhwBL._SY300_SX300_QL70_FMwebp_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Sony Bravia 139 cm (55 inches) 4K Ultra HD Smart LED Google TV KD-55X74L (Black)</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹60,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/71CmKZXntgL._AC_UY327_FMwebp_QL65_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55UR7500PSC (Dark Iron Gray)
+                        Visit the LG Store</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹35,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://m.media-amazon.com/images/I/71DGhNHPyeL._SX522_.jpg" alt="image">
+                </div>
+                <div class="card-content">
+                    <h2>Acer 139 cm (55 inches) Advanced I Series 4K Ultra HD Smart LED Google TV AR55GR2851UDFL (Black)</h2>
+                </div>
+                <div class="about-product">
+                    <a href="./product.html"><button class="card-button">₹32,999</button></a>
+                    <a href="./cart.html"><button class="card-button">Add to Cart</button></a>
+                </div>
             </div>
         </div>
     </section>

@@ -9,6 +9,7 @@ html{
   overflow-x: hidden;
 }
 .navbar{
+  overflow: hidden;
    @include flex(row,space-evenly);
    background-color: rgb(238, 229, 229);
    width: 100%;
@@ -45,7 +46,17 @@ html{
       display: none;
     }
 }
+@media (max-width: 1024px){
+  .navbar h1{
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px){
+  
+}
+
 #landing{
+  overflow: hidden;
   @include flex(column,space-evenly);
   height: 80vh;
   width: 100%;
@@ -78,6 +89,7 @@ html{
   }
 }
 #blog{
+  overflow: hidden;
   @include flex(column,space-between);
   h1{
     font-size: 50px;
@@ -88,10 +100,20 @@ html{
   }
 }
 #card{
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   padding: 10px;
+  @media (max-width: 1024px){
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 20px;
+  gap: 5px;
+  }
+  @media (max-width: 768px){
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+    }
   .card {
     width: 300px;
     height: 400px;
@@ -114,25 +136,38 @@ html{
       padding-bottom: 10px;
     }
     .card-button{
-      width: 80px;
+      width: 100px;
       height: 30px;
-    }
-    .card-button:hover{
-      background-color: rgb(238, 229, 229) ;
-      color: $primary_Color;
+      @include hover($primary_Color, 1.1, 2);
     }
   }
 }
 #images{
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-left: 80px;
   padding-top: 50px;
 }
+@media (max-width: 1024px){
+  #images{
+    margin-right: 40px;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px){
+  #images{
+    gap: 15px;
+  }
+}
 #footer{
+  overflow: hidden;
   @include flex(row,space-between);
   color: $primary_Color;
   margin: 30px;
+  @media (max-width: 768px){
+    @include flex(column,space-between);
+  }
    .contact{
     @include flex(column,space-between);
     gap: 40px;
@@ -169,6 +204,7 @@ html{
    }
 }
 .foot{
+  overflow: hidden;
   @include flex(row,space-between);
   background-color: rgb(169, 166, 166);
    .foot1{
