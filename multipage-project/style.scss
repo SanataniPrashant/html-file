@@ -9,25 +9,24 @@ html{
   overflow-x: hidden;
 }
 .navbar{
-  overflow: hidden;
-   @include flex(row,space-evenly);
-   background-color: rgb(238, 229, 229);
-   width: 100%;
-   height: 80px;
-   position: fixed;
-   z-index: 100;
-    h1{
-      color: $secondary_Color;
-      font-size: 35px;
-    }
-    h1:hover{
-      @include hover($primary_Color,1.2,2s);
-    }
-    ul{
-      @include flex(row,space-between);
-      list-style-type: none;
-      gap: 70px;
-    }
+  // overflow: hidden;
+  @include flex(row,space-evenly);
+  background-color: rgb(238, 229, 229);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+  h1{
+    color: $secondary_Color;
+    font-size: 35px;
+  }
+  h1:hover{
+    @include hover($primary_Color,1.2,2s);
+  }
+  ul{
+    @include flex(row,space-between);
+    list-style-type: none;
+    gap: 70px;
     .search {
       width: 300px;
       height: 40px;
@@ -36,25 +35,17 @@ html{
       text-align:end;
       padding: 3px 6px 3px 0px;
     }
-     li a{
+    li a{
       color: $secondary_Color;
-     }
-     li a:hover{
-      @include hover($primary_Color,1.2,2s);
-     }
-    label{
-      display: none;
     }
-}
-@media (max-width: 1024px){
-  .navbar h1{
-    font-size: 25px;
+    li a:hover{
+      @include hover($primary_Color,1.2,2s);
+    }
+  }
+  #bars{
+    display: none;
   }
 }
-@media (max-width: 768px){
-  
-}
-
 #landing{
   overflow: hidden;
   @include flex(column,space-evenly);
@@ -105,15 +96,6 @@ html{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   padding: 10px;
-  @media (max-width: 1024px){
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-right: 20px;
-  gap: 5px;
-  }
-  @media (max-width: 768px){
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10px;
-    }
   .card {
     width: 300px;
     height: 400px;
@@ -149,25 +131,11 @@ html{
   padding-left: 80px;
   padding-top: 50px;
 }
-@media (max-width: 1024px){
-  #images{
-    margin-right: 40px;
-    gap: 10px;
-  }
-}
-@media (max-width: 768px){
-  #images{
-    gap: 15px;
-  }
-}
 #footer{
   overflow: hidden;
   @include flex(row,space-between);
   color: $primary_Color;
   margin: 30px;
-  @media (max-width: 768px){
-    @include flex(column,space-between);
-  }
    .contact{
     @include flex(column,space-between);
     gap: 40px;
@@ -215,4 +183,69 @@ html{
     gap: 10px;
     color: blue;
    }
+}
+@media (max-width:1024px){
+  .navbar ul{
+    gap: 40px;
+  }
+  #cards{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #images{
+    margin-right: 40px;
+    gap: 20px;
+  }
+}
+@media (max-width:768px){
+  .navbar ul{
+    display: none;
+  }
+  #card{
+    grid-template-columns: 1fr 1fr;
+  }
+  #footer{
+    @include flex(column,space-between);
+    .customer{
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width:426px){
+  #landing{
+    .ftitle{
+      margin-top: 25px;
+      .title{
+        h1{
+          font-size: 25px;
+        }
+        h2{
+          font-size: 20px;
+        }
+      }
+    }
+    .btitle{
+      @include flex(column,space-evenly);
+    }
+  }
+  #blog{
+    h1{
+      font-size: 25px;
+    }
+  }
+  #card{
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+  }
+  #images{
+    margin-right: 70px;
+  }
+  #footer {
+    @include flex(column,space-between);
+    .customer{
+      @include flex(column,space-between);
+    }
+  }
+  .foot{
+    @include flex(column,space-between);
+  }
 }

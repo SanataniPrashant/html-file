@@ -28,11 +28,11 @@
         top: 0px;
         }
         .navbar h1 {
-        color: #2c4964;
+        color: black;
         font-size: 35px;
         }
         .navbar h1:hover {
-        color: black;
+        color:#2c4964;
         transition: all;
         transform: scale(1.2);
         transition-duration: 2s;
@@ -48,16 +48,16 @@
         .navbar .search {
         width: 300px;
         height: 40px;
-        border: 2px solid #2c4964;
+        border: 2px solid black;
         border-radius: 30px;
         text-align: end;
         padding: 3px 6px 3px 0px;
         }
         .navbar li a {
-        color: #2c4964;
+        color:black;
         }
         .navbar li a:hover {
-        color: black;
+        color:#2c4964;
         transition: all;
         transform: scale(1.2);
         transition-duration: 2s;
@@ -198,6 +198,40 @@
         flex-direction: row;
         gap: 10px;
         color: blue;
+        }
+        @media (max-width:1024px){
+            #card {
+            grid-template-columns: 1fr 1fr 1fr;
+            }
+            #footer{
+                flex-direction: column;
+            }
+        }
+        @media (max-width:768px){
+            #card {
+            grid-template-columns: 1fr 1fr;
+            }
+            #footer {
+                flex-direction: column;
+            }
+            #footer .customer {
+            margin-top: 20px;
+            }
+        }
+        @media (max-width:426px){
+            #card {
+            grid-template-columns: 1fr;
+            }
+            #footer {
+                flex-direction: column;
+            }
+            #footer .customer {
+            margin-top: 20px;
+            flex-direction: column;
+            }
+            .foot{
+                flex-direction: column;
+            }
         }
     </style>
 </head>

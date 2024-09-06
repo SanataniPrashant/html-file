@@ -26,11 +26,11 @@
             top: 0px;
         }
         .navbar h1 {
-        color: #2c4964;
+        color: black;
         font-size: 35px;
         }
         .navbar h1:hover {
-        color: black;
+        color:#2c4964;
         transition: all;
         transform: scale(1.2);
         transition-duration: 2s;
@@ -46,16 +46,16 @@
         .navbar .search {
         width: 300px;
         height: 40px;
-        border: 2px solid #2c4964;
+        border: 2px solid black;
         border-radius: 30px;
         text-align: end;
         padding: 3px 6px 3px 0px;
         }
         .navbar li a {
-        color: #2c4964;
+        color:black;
         }
         .navbar li a:hover {
-        color: black;
+        color:#2c4964;
         transition: all;
         transform: scale(1.2);
         transition-duration: 2s;
@@ -63,7 +63,21 @@
         .navbar label {
         display: none;
         }
-
+        
+        #audio{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 120px;
+        }
+        #audio .audio{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 30px;
+        }
         #footer {
         display: flex;
         justify-content: space-between;
@@ -159,8 +173,82 @@
         <input type="checkbox" hidden id="input1"/>  
         <label for="input1"><i id="bars" class="fa fa-bars fa-3x"></i></label>
     </div>
-    <section>
+    <section id="cart">
+        <h1>Cart</h1>
+        <div class="products">
+            <div>
+                <img src="https://transvelo.github.io/electro-html/2.0/assets/img/300X300/img6.jpg" alt="">
+                <h3>Ultra Wireless S50 Headphones S50 with Bluetooth</h3>
+                <button>₹2,000</button>
+                <button>2</button>
+                <button>₹4,000</button>
 
+            </div>
+            <div>
+                <img src="https://m.media-amazon.com/images/I/412CKVTe8dL._SY445_SX342_QL70_FMwebp_.jpg" alt="">
+                <h3>Apple iPhone 15 (128 GB) - Black</h3>
+                <button>₹69,999</button>
+                <button>1</button>    
+                <button>₹69,999</button>    
+            </div>
+            <div>
+                <img src="https://transvelo.github.io/electro-html/2.0/assets/img/300X300/img7.png" alt="">
+                <h3>Widescreen NX Mini F1 SMART NX</h3>
+                <button>₹7,999</button>
+                <button>1</button>
+                <button>₹7,999</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="box">
+                    <input type="text" placeholder="Coupon-Code">
+                </div>
+                <button>Apply Coupon</button>
+            </div>
+            <div>
+                <button>Update Cart</button>
+                <a href="./checkout.html"><button>Proceed to checkout</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="audio">
+        <h1>Explore Top  Brands</h1>
+        <div class="audio">
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="oneplus">
+                <img alt="Instant Bank Discount" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/oneplus._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="sony">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/sony._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="samsung">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/samsung._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+            <div class="realme">
+                <img alt="NA" src="https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png" class="a-dynamic-image sl-sobe-carousel-sub-card-img" data-a-dynamic-image="{&quot;https://m.media-amazon.com/images/G/31/img24hp/shopbybrand/new/REALME._SS300_QL85_FMpng_.png&quot;:[300,300]}" style="max-width:100%;max-height:100%;">
+            </div>
+        </div>
     </section>
     <section id="footer">
         <div class="contact">

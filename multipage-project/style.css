@@ -9,7 +9,6 @@ html {
 }
 
 .navbar {
-  overflow: hidden;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -38,7 +37,7 @@ html {
   list-style-type: none;
   gap: 70px;
 }
-.navbar .search {
+.navbar ul .search {
   width: 300px;
   height: 40px;
   border: 2px solid black;
@@ -46,24 +45,19 @@ html {
   text-align: end;
   padding: 3px 6px 3px 0px;
 }
-.navbar li a {
+.navbar ul li a {
   color: black;
 }
-.navbar li a:hover {
+.navbar ul li a:hover {
   color: #2c4964;
   transition: all;
   transform: scale(1.2);
   transition-duration: 2s;
 }
-.navbar label {
+.navbar #bars {
   display: none;
 }
 
-@media (max-width: 1024px) {
-  .navbar h1 {
-    font-size: 25px;
-  }
-}
 #landing {
   overflow: hidden;
   display: flex;
@@ -138,19 +132,6 @@ html {
   gap: 10px;
   padding: 10px;
 }
-@media (max-width: 1024px) {
-  #card {
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-right: 20px;
-    gap: 5px;
-  }
-}
-@media (max-width: 768px) {
-  #card {
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10px;
-  }
-}
 #card .card {
   width: 300px;
   height: 400px;
@@ -196,17 +177,6 @@ html {
   padding-top: 50px;
 }
 
-@media (max-width: 1024px) {
-  #images {
-    margin-right: 40px;
-    gap: 10px;
-  }
-}
-@media (max-width: 768px) {
-  #images {
-    gap: 15px;
-  }
-}
 #footer {
   overflow: hidden;
   display: flex;
@@ -215,14 +185,6 @@ html {
   flex-direction: row;
   color: #2c4964;
   margin: 30px;
-}
-@media (max-width: 768px) {
-  #footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
 }
 #footer .contact {
   display: flex;
@@ -295,4 +257,79 @@ html {
   flex-direction: row;
   gap: 10px;
   color: blue;
+}
+
+@media (max-width: 1024px) {
+  .navbar ul {
+    gap: 40px;
+  }
+  #cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #images {
+    margin-right: 40px;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+  #card {
+    grid-template-columns: 1fr 1fr;
+  }
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #footer .customer {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 426px) {
+  #landing .ftitle {
+    margin-top: 25px;
+  }
+  #landing .ftitle .title h1 {
+    font-size: 25px;
+  }
+  #landing .ftitle .title h2 {
+    font-size: 20px;
+  }
+  #landing .btitle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  #blog h1 {
+    font-size: 25px;
+  }
+  #card {
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+  }
+  #images {
+    margin-right: 70px;
+  }
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #footer .customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
