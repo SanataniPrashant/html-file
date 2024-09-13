@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+#navbar{
+    z-index: 5;
+    position: fixed;
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .logo img{
+    width: 120px;
+    height: 100px;
+    margin-left: 10px;
+}
+#navbar ul {
+    list-style: none;
+    color: rgb(139, 131, 131);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15PX;
+    font-size: 20px;
+}
+#navbar ul li i{
+    color: white;
+}
+#navbar ul .end{
+    list-style: none;
+    color:rgb(139, 131, 131);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15PX;
+}
+#navbar div{
+    color:white;
+}
+#navbar .logoo img{
+    width: 90px;
+    height: 90px;
+}
+#bars{
+    display: none;
+}
+@media(max-width:1024px){
+    #bars{
+        display: block;
+        color: white;
+        margin-right: 10px;
+    }
+    #navbar ul{
+        flex-direction:row;
+        position: absolute;
+        top: 100px;
+        background-color: rgb(91, 84, 84);
+        color: white;
+        width: 100%;
+        height: 40px;
+        gap: 10px;
+        text-align: center;
+        display: none;
+    }
+    #input1:checked ~ #navbar ul {
+        display: flex;
+        flex-direction: row;
+    }
+}
+#landing {
+    background-color: black;
+    /* height: 100vh; */
+    width: 100%;
+}
+#landing .slider{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+#landing .slider figure{
+    position: relative;
+    top: 100px;
+    left: 0;
+    width: 400%;
+    animation: 10s slide infinite;
+}
+#landing .slider figure .slide{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+#landing .slider figure .slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: start;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0,0,0,0.5);
+}
+#landing .slider figure .slide h3{
+    position: absolute;
+    font-size: 2em;
+    width: 100%;
+    text-align: start;
+    margin-top: 140px;
+    color: rgb(208, 201, 201);
+    text-shadow: 1px 1px 2px rgb(0,0,0,0.5);
+}
+#landing .slider figure .slide button{
+    position: absolute;
+    font-size: 1em;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(70, 70, 245);
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 210px;
+    color: rgb(208, 201, 201);
+    text-shadow: 1px 1px 2px rgb(0,0,0,0.5);
+}
+#landing .slider figure .slide img{
+    width: 100%;
+    height: 700px;
+}
+@keyframes slide{
+    0% {
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left: -300%;
+    }
+    65%{
+        left: -300%;
+    }
+    66%{
+        left: -200%;
+    }
+    74%{
+        left: -200%;
+    }
+    75%{
+        left: -100%;
+    }
+    85%{
+        left: -100%;
+    }
+    90%{
+        left: 0;
+    }
+    100%{
+       left: 0;
+    }
+}
+@media(max-width:426px){
+    #landing .slider figure .slide h1{
+        font-size: 2em;
+    }
+    #landing .slider figure .slide h3{
+        font-size: 1em;
+    }
+    #landing .slider figure .slide h3{
+        height: 400px;
+    }
+}
+
+
