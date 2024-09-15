@@ -77,6 +77,9 @@ html {
         display: flex;
         flex-direction: row;
     }
+    #input1:checked ~ #navbar .en{
+        display: none;
+    }
 }
 #landing {
     background-color: black;
@@ -190,5 +193,324 @@ html {
         height: 400px;
     }
 }
-
-
+#cards{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    gap: 30px;
+}
+#cards h1{
+    font-size: 44px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#cards .cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+#cards .cards .slide1{
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/24/13/52/working-1219889_640.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#cards .cards .slide2{
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/03/15/36/cockpit-2576889_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#cards .cards .slide3{
+    background-image: url("https://cdn.pixabay.com/photo/2021/06/13/12/11/transmission-tower-6333112_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#cards .cards div button{
+    font-size: 30px;
+    border: none;
+    background: none;
+    color: white;
+}
+@media(max-width:1024px){
+    #cards .cards{
+        gap: 10px;
+    }
+}
+@media(max-width:768px){
+    #cards .cards{
+        flex-direction: column;
+    }
+}
+#ram{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    gap: 30px;
+}
+#ram h1{
+    font-size: 44px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#ram .ramm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#ram .ramm .data{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#ram .ramm .data .slide{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#ram .ramm .data .slide i{
+    color: rgb(60, 190, 241);
+}
+@media(max-width:426px){
+    #ram .ramm {
+        flex-direction: column;
+    }
+}
+#cardss{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    gap: 30px;
+}
+#cardss h1{
+    font-size: 44px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#cardss .cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+#cardss .cards .slide1{
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/06/06/37/laptop-8236497_640.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#cardss .cards .slide2{
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_640.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#cardss .cards .slide3{
+    background-image: url("https://media.istockphoto.com/id/1424988699/photo/businessman-contemplating-in-the-office-looking-through-the-window.jpg?s=2048x2048&w=is&k=20&c=fLiYO959c4k1PB25-bxmkz3xtUb0mgxrRhkfi2RsZ6o=");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#cardss .cards div button{
+    font-size: 30px;
+    border: none;
+    background: none;
+    color: white;
+}
+@media(max-width:1024px){
+    #cardss .cards{
+        gap: 10px;
+    }
+}
+@media(max-width:768px){
+    #cardss .cards{
+        flex-direction: column;
+    }
+}
+#up{
+    background-color: #1e2222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 30px;
+    font-size: 44px;
+}
+#up h1{
+    margin-top: 40px;
+}
+#up button{
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#footer{
+    background-color: #1e2222;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    color: white;
+    gap: 30px;
+    font-size: 34px;
+}
+#footer h5{
+    margin-top: 40px;
+}
+#footer h5,
+#footer h1{
+    margin-left: 80px;
+}
+#footer .fa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 90px;
+    margin-left: 80px;
+}
+#footer .fa .a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 30px;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+@media(max-width:1024px){
+    #footer{
+        align-items: center;
+    }
+    #footer .fa{
+        flex-direction: column;
+    }
+}
+.footerr{
+    background-color: #1e2222;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    gap: 30px;
+    font-size: 34px;
+}
+.footer div{
+    margin-top: 40px;
+}
+@media(max-width:1024px){
+    .footerr{
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width:426px){
+    .footerr{
+        grid-template-columns: auto;
+    }
+}
+#ramm{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    gap: 30px;
+}
+#ramm h1{
+    font-size: 44px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#ramm .ramm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#ramm .ramm .data{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#ramm .ramm .data .slide{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#ramm .ramm .data .slide i{
+    color: rgb(60, 190, 241);
+}
+@media(max-width:426px){
+    #ramm .ramm {
+        flex-direction: column;
+    }
+}
