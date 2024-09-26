@@ -66,6 +66,65 @@
             display: none;
             border:2px solid black;
         }
+        .checkout {
+            background-image: url("https://cdn.pixabay.com/photo/2017/09/10/10/01/background-2734972_1280.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .checkout h1 {
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(1,1,1,1);
+            background-color: black;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .billing-info, .shipping-info, .payment-method, .order-summary {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .billing-info h2, .shipping-info h2, .payment-method h2, .order-summary h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
         #footer {   
             border: 5px solid black;
             border-radius: 10px;
@@ -208,7 +267,53 @@
         </ul>
         <input type="checkbox" hidden id="input1"/>  
         <label for="input1"><i id="bars" class="fa fa-bars fa-3x"></i></label>
-    </div>
+    </div><section class="checkout">
+        <h1>Checkout</h1>
+        <form>
+            <div class="billing-info">
+                <h2>Billing Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address"><br><br>
+            </div>
+            <div class="shipping-info">
+                <h2>Shipping Information</h2>
+                <label for="shipping-name">Name:</label>
+                <input type="text" id="shipping-name" name="shipping-name"><br><br>
+                <label for="shipping-email">Email:</label>
+                <input type="email" id="shipping-email" name="shipping-email"><br><br>
+                <label for="shipping-phone">Phone:</label>
+                <input type="tel" id="shipping-phone" name="shipping-phone"><br><br>
+                <label for="shipping-address">Address:</label>
+                <input type="text" id="shipping-address" name="shipping-address"><br><br>
+            </div>
+            <div class="payment-method">
+                <h2>Payment Method</h2>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number"><br><br>
+                <label for="expiration-date">Expiration Date:</label>
+                <input type="date" id="expiration-date" name="expiration-date"><br><br>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv"><br><br>
+            </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <ul>
+                    <li>Product 1: $100</li>
+                    <li>Product 2: $200</li>
+                    <li>Subtotal: $300</li>
+                    <li>Tax: $30</li>
+                    <li>Total: $330</li>
+                </ul>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
     <section id="footer">
         <div class="contact">
             <h1>DIGITAL-STORE</h1>
@@ -230,9 +335,6 @@
                 </a>
             </div>
         </div>
-        <section>
-
-        </section>
         <div class="customer">
             <div class="p1">
                 <h2><b>Find it Fast</b></h2>
